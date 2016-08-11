@@ -1,5 +1,7 @@
 package com.spicespirittest.page;
 
+import org.openqa.selenium.By;
+
 import com.spicespirittest.common.AllWebElement;
 import com.spicespirittest.common.Config;
 import com.spicespirittest.common.JDBCUtil;
@@ -18,8 +20,10 @@ public class CenterStockUnConfirm extends SpiceSpiritBase {
 				click(AllWebElement.CENTERSTOCK_GPURCHARSE_UNCONFIRMED);
 				click(AllWebElement.CENTERSTOCK_GPURCHARSE_DETAIL);
 				sleep();
-				click(AllWebElement.CENTERSTOCK_GPURCHARSE_AFFIRM);				
-				result = getText(AllWebElement.getTipsText);
+				click(AllWebElement.CENTERSTOCK_GPURCHARSE_AFFIRM);
+				sleep();
+				result = getText(AllWebElement.GET_MESSAGE_TEXT);
+				click(By.id("close-back"));
 			} catch (Exception e) {
 				e.printStackTrace();
 				break;

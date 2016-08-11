@@ -40,7 +40,7 @@ public class CenterOuStock extends SpiceSpiritBase {
 				sleep();
 				result = getText(AllWebElement.GET_MESSAGE_TEXT);
 				click(AllWebElement.CENTERSTOCK_OUSTOCK_IMGCONFIRM);
-				sleep(1);
+				sleep();
 			} catch (Exception e) {
 				e.printStackTrace();
 				break;

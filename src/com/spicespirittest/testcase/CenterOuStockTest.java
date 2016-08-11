@@ -8,7 +8,7 @@ import com.spicespirittest.page.CenterOuStock;
 public class CenterOuStockTest {
 
 	@Test
-	public void ceterOutStock() {
+	public void centerOutStock() {
 		CenterOuStock cos = new CenterOuStock();
 		cos.centerOuStock();
 		Assert.assertEquals("出库成功！", cos.result);

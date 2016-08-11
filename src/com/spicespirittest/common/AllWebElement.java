@@ -19,7 +19,7 @@ public class AllWebElement {
 	/** 获取所有弹出的Tips提示，用来判断是否成功 */
 	public static By getTipsText = By.id("tips");
 
-	public static By GET_MESSAGE_TEXT = By.id("message");
+	public static By GET_MESSAGE_TEXT = By.xpath("//div/p[@id='message']");
 	
 	/** 客服管理系统 */
 	public static By MAINPAGE_CUSTOMER = By.xpath("//div/ul/li/a[i[@class='i11']]");	
