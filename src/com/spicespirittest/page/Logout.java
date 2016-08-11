@@ -1,6 +1,6 @@
 package com.spicespirittest.page;
 
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
 
 import com.spicespirittest.common.AllWebElement;

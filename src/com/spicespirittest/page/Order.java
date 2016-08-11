@@ -12,7 +12,6 @@ import com.spicespirittest.common.Config;
 import com.spicespirittest.common.JDBCUtil;
 import com.spicespirittest.common.SpiceSpiritBase;
 
-import junit.framework.Assert;
 
 public class Order extends SpiceSpiritBase {
 
