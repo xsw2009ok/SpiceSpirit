@@ -7,6 +7,7 @@ import com.spicespirittest.common.Config;
 import com.spicespirittest.common.JDBCUtil;
 import com.spicespirittest.common.SpiceSpiritBase;
 
+
 public class CenterInStock extends SpiceSpiritBase{
 
 	Login login = new Login();
@@ -35,6 +36,7 @@ public class CenterInStock extends SpiceSpiritBase{
 				click(AllWebElement.CENTERSTOCK_INSTOCK_INSTOCK);
 				for (int k = 1; k < 100; k++) {
 					try {
+						sleep();
 						click(By.xpath("//tbody/tr[" + k + "]/td[4]/input"));
 						sleep();
 						click(AllWebElement.CENTERSTOCK_INSTOCK_DEFAULTTIME);
