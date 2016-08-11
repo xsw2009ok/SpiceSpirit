@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Login">
+    <classes>
+      <class name="com.spicespirittest.testcase.LoginTest"/>
+    </classes>
+  </test> <!-- Login -->
+  <test name="LogisticsCreateTodayData">
+    <classes>
+      <class name="com.spicespirittest.testcase.LogisticsCreateTodayDataTest"/>
+    </classes>
+  </test> <!-- LogisticsCreateTodayData -->
+  <test name="LogisticsGoodsApplication">
+    <classes>
+      <class name="com.spicespirittest.testcase.LogisticsGoodsApplicationTest"/>
+    </classes>
+  </test> <!-- LogisticsGoodsApplication -->
+  <test name="Centerstock">
+    <classes>
+      <class name="com.spicespirittest.testcase.CenterStockTest"/>
+    </classes>
+  </test> <!-- Centerstock -->
+  <test name="CenterStockUnConfirm">
+    <classes>
+      <class name="com.spicespirittest.testcase.CenterStockUnConfirmTest"/>
+    </classes>
+  </test> <!-- CenterStockUnConfirm -->
+  <test name="CenterInStock">
+    <classes>
+      <class name="com.spicespirittest.testcase.CenterInStockTest"/>
+    </classes>
+  </test> <!-- CenterInStock -->
+  <test name="CenterOuStock">
+    <classes>
+      <class name="com.spicespirittest.testcase.CenterOuStockTest"/>
+    </classes>
+  </test> <!-- CenterOuStock -->
+  <test name="LogisticsGoodsInStock">
+    <classes>
+      <class name="com.spicespirittest.testcase.LogisticsGoodsInStockTest"/>
+    </classes>
+  </test> <!-- LogisticsGoodsInStock -->
+  <test name="Order">
+    <classes>
+      <class name="com.spicespirittest.testcase.OrderTest"/>
+    </classes>
+  </test> <!-- Order -->
+  <test name="OrderReserve">
+    <classes>
+      <class name="com.spicespirittest.testcase.OrderReserveTest"/>
+    </classes>
+  </test> <!-- OrderReserve -->
+  <test name="Logout">
+    <classes>
+      <class name="com.spicespirittest.testcase.LogoutTest"/>
+    </classes>
+  </test> <!-- Logout -->
+  <test name="LogisticsCreateTodayData(failed)">
+    <classes>
+      <class name="com.spicespirittest.testcase.LogisticsCreateTodayDataTest">
+        <methods>
+          <include name="logisticsCreateTodayDataTest"/>
+        </methods>
+      </class> <!-- com.spicespirittest.testcase.LogisticsCreateTodayDataTest -->
+    </classes>
+  </test> <!-- LogisticsCreateTodayData(failed) -->
+  <test name="Centerstock(failed)">
+    <classes>
+      <class name="com.spicespirittest.testcase.CenterStockTest">
+        <methods>
+          <include name="centerStockTest"/>
+        </methods>
+      </class> <!-- com.spicespirittest.testcase.CenterStockTest -->
+    </classes>
+  </test> <!-- Centerstock(failed) -->
+</suite> <!-- Failed suite [Suite] -->

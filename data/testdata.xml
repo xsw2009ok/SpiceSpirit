@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<value>
+		<!-- 测试地址 -->
+		<testurl>http://192.168.100.241/</testurl>
+		<!-- 客服账号 -->
+		<kefu_username>guochunmei</kefu_username>
+		<kefu_password>111111</kefu_password>
+		<kefu_result>郭春梅</kefu_result>
+		<!-- 中心库房账号 -->
+		<gongyinglian_username>liuchaoli</gongyinglian_username>
+		<gongyinglian_password>111111</gongyinglian_password>
+		<gongyinglian_result>刘潮礼</gongyinglian_result>
+		<!-- 物流账号 -->
+		<wuliu_username>dengchao</wuliu_username>
+		<wuliu_password>111111</wuliu_password>
+		<wuliu_result>邓超</wuliu_result>
+		<!-- 数据库配置信息 -->
+		<jdbc_url>jdbc:mysql://192.168.100.198/</jdbc_url>
+		<jdbc_db>spicespirit</jdbc_db>
+		<jdbc_driver>com.mysql.jdbc.Driver</jdbc_driver>
+		<jdbc_username>root</jdbc_username>
+		<jdbc_password>spice</jdbc_password>
+		<!-- 默认的控件等待时间 -->
+		<waittime>2</waittime>
+		<!-- 申购的数量 -->
+		<gapplicationnumber>5000</gapplicationnumber>
+		<!-- 下单会员手机号 -->
+		<order_phone>15801115436</order_phone>
+		<!-- all为执行所有的下单类型，  order为正常下单，reseve为预订单 -->
+		<ordertype>order</ordertype>
+		<!-- 登录账户设定 kefu\wuliu\zhongxinkufang-->
+		<logintype>wuliu</logintype>
+	</value>
+</config>
