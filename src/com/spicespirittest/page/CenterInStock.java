@@ -31,16 +31,13 @@ public class CenterInStock extends SpiceSpiritBase{
 			try {
 				sleep();
 				click(AllWebElement.CENTERSTOCK_INSTOCK_CONFIRMED);
-				sleep();
 				click(AllWebElement.CENTERSTOCK_INSTOCK_INSTOCK);
 				for (int k = 1; k < 100; k++) {
 					try {
 						sleep();
 						click(By.xpath("//tbody/tr[" + k + "]/td[4]/input"));
-						sleep();
 						click(AllWebElement.CENTERSTOCK_INSTOCK_DEFAULTTIME);
 						click(AllWebElement.CENTERSTOCK_INSTOCK_CONFIRM);
-						sleep();
 					} catch (Exception e) {
 						log.info("没有需要填写的批次了.");					
 						break;
