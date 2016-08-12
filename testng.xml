@@ -7,73 +7,8 @@
 			<class name ="com.spicespirittest.testcase.LoginTest"/>
 		</classes>
  	</test>
-	<!-- 盘点生成当天数据 -->
-	<test name="LogisticsCreateTodayData">
-		<classes>
-			<class name ="com.spicespirittest.testcase.LogisticsCreateTodayDataTest"/>
-		</classes>		
- 	</test>
-	<!-- 申购商品 -->
- 	<test name="LogisticsGoodsApplication">
-		<classes>
-			<class name ="com.spicespirittest.testcase.LogisticsGoodsApplicationTest"/>
-		</classes>		
- 	</test>
-	<!-- 中心库房-申购待确认列表 -->
- 	<test name="CenterLogisticsGAppListTest">
-		<classes>
-			<class name ="com.spicespirittest.testcase.CenterLogisticsGAppListTest"/>
-		</classes>		
- 	</test>
-	<!-- 中心库房-申购已确认列表 -->
- 	<test name="CenterLogisticsGAppAffirmListTest">
-		<classes>
-			<class name ="com.spicespirittest.testcase.CenterLogisticsGAppAffirmListTest"/>
-		</classes>		
- 	</test>
- 	<!-- 中心库房-新增采购单 -->
- 	<test name="Centerstock">
-		<classes>
-			<class name ="com.spicespirittest.testcase.CenterStockTest"/>
-		</classes>		
- 	</test>
- 	 <!-- 中心库房-待确认采购单 -->
- 	<test name="CenterStockUnConfirm">
-		<classes>
-			<class name ="com.spicespirittest.testcase.CenterStockUnConfirmTest"/>
-		</classes>		
- 	</test>
-	<!-- 中心库房入库 -->
- 	<test name="CenterInStock">
-		<classes>
-			<class name ="com.spicespirittest.testcase.CenterInStockTest"/>
-		</classes>
- 	</test>
-	<!-- 中心库房出库 -->
-	<test name="CenterOuStock">
-		<classes>
-			<class name ="com.spicespirittest.testcase.CenterOuStockTest"/>
-		</classes>
- 	</test>
-	<!-- 物流-申购入库 -->
- 	<test name="LogisticsGoodsInStock">
-		<classes>
-			<class name ="com.spicespirittest.testcase.LogisticsGoodsInStockTest"/>
-		</classes>
- 	</test>
- 	<!-- 客服正产下单 -->
- 	<test name="Order">
-		<classes>
-			<class name ="com.spicespirittest.testcase.OrderTest"/>
-		</classes>
- 	</test>
- 	<!-- 客服下预订单 -->
-	<test name="OrderReserve">
-		<classes>
-			<class name ="com.spicespirittest.testcase.OrderReserveTest"/>
-		</classes>		
- 	</test>
-	<!--  -->
+
+	<!-- 退出 -->
  	<test name="Logout">
 		<classes>
 			<class name ="com.spicespirittest.testcase.LogoutTest"/>
