@@ -26,9 +26,9 @@
 		</classes>		
  	</test>
 	<!-- 中心库房-申购已确认列表 -->
- 	<test name="centerLogisticsGAppAffirmListTest">
+ 	<test name="CenterLogisticsGAppAffirmListTest">
 		<classes>
-			<class name ="com.spicespirittest.testcase.centerLogisticsGAppAffirmListTest"/>
+			<class name ="com.spicespirittest.testcase.CenterLogisticsGAppAffirmListTest"/>
 		</classes>		
  	</test>
  	<!-- 中心库房-新增采购单 -->
