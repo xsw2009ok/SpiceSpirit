@@ -164,6 +164,8 @@ public class AllWebElement {
 	public static By ORDER_INFO_SEARCH_GOODS = By.id("order_code_match");
 	/** 选择商品 */
 	public static By ORDER_INFO_SELECT_GOODS = By.xpath("//div[@id='order_match_lists']/ul/li[1]/span[1]");
+	/** 订单区域 */
+	public static By ORDER_INFO_AREA = By.id("order_area");
 	/** 订单渠道 */
 	public static By ORDER_INFO_SOURCE_CHANNEL = By.id("order_source");
 	/** 预定单 */

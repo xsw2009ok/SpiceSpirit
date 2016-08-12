@@ -5,30 +5,31 @@ import com.spicespirittest.common.Config;
 import com.spicespirittest.common.JDBCUtil;
 import com.spicespirittest.common.SpiceSpiritBase;
 
-public class CenterLogisticsGAppList  extends SpiceSpiritBase{
-	
-	
-	
-	public void centerLogisticsGAppList(){
+public class CenterLogisticsGAppList extends SpiceSpiritBase {
+
+	/**
+	 * 中心库房-申购管理-待确认申购单
+	 */
+	public void centerLogisticsGAppList() {
 		Login login = new Login();
 		result = "";
 		login.changeLoginUser(Config.gongyinglian_username, Config.gongyinglian_password);
 		centerStockInit();
 		click(AllWebElement.CENTERSTOCK_GAPPLICATION_LIST);
-		for(int i =0 ; i<1000;i++){
-			try{
+		for (int i = 0; i < 1000; i++) {
+			try {
 				click(AllWebElement.CENTERSTOCK_GAPPLICATION_CHECK);
 				sleep();
 				click(AllWebElement.CENTERSTOCK_GAPPLICATION_SUBMIT);
 				result = getText(AllWebElement.CENTERSTOCK_GAPPLICATION_CLOSE);
 				click(AllWebElement.CENTERSTOCK_GAPPLICATION_CLOSE);
-			}catch(Exception e){
+			} catch (Exception e) {
 				break;
 			}
 		}
-		
+
 	}
-	
+
 	/**
 	 * 初始化页面
 	 */
@@ -37,5 +38,5 @@ public class CenterLogisticsGAppList  extends SpiceSpiritBase{
 		click(AllWebElement.MAINPAGE_CENTERSTOCK);
 		click(AllWebElement.MAINPAGE_CENTERSTOCK_GAPPLICATION);
 	}
-	
+
 }

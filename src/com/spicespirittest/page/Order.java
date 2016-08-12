@@ -61,6 +61,7 @@ public class Order extends SpiceSpiritBase {
 		click(AllWebElement.ORDER_INFO_SELECT_GOODS);
 		sleep();
 		selectByText(AllWebElement.ORDER_INFO_SOURCE_CHANNEL, "电话");
+		selectByText(AllWebElement.ORDER_INFO_AREA, "北京");
 		click(AllWebElement.ORDER_INFO_START_TIME);
 		click(AllWebElement.ORDER_INFO_START_TIME_DEFAULT);
 		click(AllWebElement.ORDER_INFO_START_TIME_DONE);

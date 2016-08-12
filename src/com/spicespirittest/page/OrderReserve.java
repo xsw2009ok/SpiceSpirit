@@ -30,6 +30,7 @@ public class OrderReserve extends SpiceSpiritBase {
 		click(AllWebElement.ORDER_INFO_SELECT_GOODS);
 		sleep();
 		selectByText(AllWebElement.ORDER_INFO_SOURCE_CHANNEL, "电话");
+		selectByText(AllWebElement.ORDER_INFO_AREA, "北京");
 		// 是否为预订单
 		click(AllWebElement.ORDER_INFO_RESERVE_DATE);
 		click(AllWebElement.ORDER_INFO_START_TIME);
