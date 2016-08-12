@@ -15,15 +15,15 @@ public class CenterStockUnConfirm extends SpiceSpiritBase {
 
 		centerStockInit();
 		result = "";
-		for (int i = 0; i < 1000; i++) {
+		for (int i = 0; i < 200; i++) {
 			try {
 				click(AllWebElement.CENTERSTOCK_GPURCHARSE_UNCONFIRMED);
+				sleep();
 				click(AllWebElement.CENTERSTOCK_GPURCHARSE_DETAIL);
 				sleep();
 				click(AllWebElement.CENTERSTOCK_GPURCHARSE_AFFIRM);
 				sleep();
-				result = getText(AllWebElement.GET_MESSAGE_TEXT);
-				click(By.id("close-back"));
+				result = getText(AllWebElement.getTipsText);
 			} catch (Exception e) {
 				e.printStackTrace();
 				break;

@@ -269,5 +269,18 @@ public class AllWebElement {
 	public static By CENTERSTOCK_OUSTOCK_BUTTONCONFIRM = By.xpath("//div/button[2]");
 	/** 供应链-出库-关闭弹窗 */
 	public static By CENTERSTOCK_OUSTOCK_IMGCONFIRM = By.id("img-close");
+	
+	/** 供应链-商品申购-查看 */
+	public static By CENTERSTOCK_GAPPLICATION_CHECK = By.xpath("//tbody[@id='applicationlist']/tr[1]/td[7]");
+	/** 供应链-商品申购-确认*/
+	public static By CENTERSTOCK_GAPPLICATION_SUBMIT = By.id("affirm");
+	/** 供应链-商品申购-messagebox */
+	public static By CENTERSTOCK_GAPPLICATION_CLOSE = By.id("close-back");
+	
+	/** 供应链-商品申购-全部生成采购单 */
+	public static By CENTERSTOCK_GAPPLICATION_COLLECT = By.id("collect");
+	/** 供应链-商品申购-messagebox */
+	public static By CENTERSTOCK_GAPPLICATION_COLLECTCLOSE = By.id("close"); 
+	
 }
 

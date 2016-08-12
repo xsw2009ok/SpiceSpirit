@@ -23,7 +23,7 @@ public class CenterOuStock extends SpiceSpiritBase {
 				click(By.xpath("//table/tbody/tr[1]/td/a"));
 				sleep();
 
-				for (int i = 1; i < 100; i++) {
+				for (int i = 1; i < 200; i++) {
 					try {
 						sleep();
 						click(By.xpath("//tbody/tr[" + i + "]/td[6]/input"));
@@ -38,7 +38,7 @@ public class CenterOuStock extends SpiceSpiritBase {
 				}
 				click(AllWebElement.CENTERSTOCK_OUSTOCK_BUTTONOUT);
 				sleep();
-				result = getText(AllWebElement.GET_MESSAGE_TEXT);
+				result = getText(By.id("close-back"));
 				click(AllWebElement.CENTERSTOCK_OUSTOCK_IMGCONFIRM);
 				sleep();
 			} catch (Exception e) {

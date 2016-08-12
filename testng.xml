@@ -19,6 +19,18 @@
 			<class name ="com.spicespirittest.testcase.LogisticsGoodsApplicationTest"/>
 		</classes>		
  	</test>
+	<!-- 中心库房-申购待确认列表 -->
+ 	<test name="CenterLogisticsGAppListTest">
+		<classes>
+			<class name ="com.spicespirittest.testcase.CenterLogisticsGAppListTest"/>
+		</classes>		
+ 	</test>
+	<!-- 中心库房-申购已确认列表 -->
+ 	<test name="centerLogisticsGAppAffirmListTest">
+		<classes>
+			<class name ="com.spicespirittest.testcase.centerLogisticsGAppAffirmListTest"/>
+		</classes>		
+ 	</test>
  	<!-- 中心库房-新增采购单 -->
  	<test name="Centerstock">
 		<classes>
