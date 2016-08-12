@@ -38,7 +38,6 @@ public class CenterStockUnConfirm extends SpiceSpiritBase {
 	public void centerStockInit() {
 		Login login = new Login();
 		login.changeLoginUser(config.gongyinglian_username, config.gongyinglian_password);
-		JDBCUtil.getDataBase("select goods_code from centre_stock");
 		waitForElementToLoad(Config.waittime, AllWebElement.MAINPAGE_CENTERSTOCK);
 		click(AllWebElement.MAINPAGE_CENTERSTOCK);
 		click(AllWebElement.MAINPAGE_CENTERSTOCK_GPURCHARSE);

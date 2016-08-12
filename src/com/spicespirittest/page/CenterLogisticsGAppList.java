@@ -33,7 +33,6 @@ public class CenterLogisticsGAppList  extends SpiceSpiritBase{
 	 * 初始化页面
 	 */
 	public void centerStockInit() {
-		JDBCUtil.getDataBase("select goods_code from centre_stock");
 		waitForElementToLoad(Config.waittime, AllWebElement.MAINPAGE_CENTERSTOCK);
 		click(AllWebElement.MAINPAGE_CENTERSTOCK);
 		click(AllWebElement.MAINPAGE_CENTERSTOCK_GAPPLICATION);

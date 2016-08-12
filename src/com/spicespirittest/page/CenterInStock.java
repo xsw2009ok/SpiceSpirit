@@ -16,7 +16,6 @@ public class CenterInStock extends SpiceSpiritBase{
 	 */
 	public void centerStockInit() {
 		login.changeLoginUser(Config.gongyinglian_username, Config.gongyinglian_password);
-		JDBCUtil.getDataBase("select goods_code from centre_stock");
 		waitForElementToLoad(Config.waittime, AllWebElement.MAINPAGE_CENTERSTOCK);
 		click(AllWebElement.MAINPAGE_CENTERSTOCK);
 	}
