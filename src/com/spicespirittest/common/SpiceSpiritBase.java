@@ -262,7 +262,8 @@ public class SpiceSpiritBase {
 	
 	public static String getDate(){
 		long l_time = System.currentTimeMillis();
-		l_time = l_time + 86400 * 1000;
+		//设置大于1天的时间
+		l_time = l_time + 86900 * 1000;
 		Date date = new Date(l_time);
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 		return sdf.format(date);
