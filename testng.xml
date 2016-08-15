@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+	<!-- 用户登录 -->
+  	<test name="Login">
+  		<classes>
+  			<class name ="com.spicespirittest.testcase.LoginTest"/>
+  		</classes>
+  	</test>
 	<!-- 盘点生成当天数据 -->
 	<test name="LogisticsCreateTodayData">
 		<classes>
@@ -66,4 +73,11 @@
 			<class name ="com.spicespirittest.testcase.OrderReserveTest"/>
 		</classes>		
  	</test>
+ 	<!--退出-->
+ 	<test name="Logout">
+  		<classes>
+  			<class name ="com.spicespirittest.testcase.LogoutTest"/>
+  		</classes>
+   	</test>
+   	
 </suite> <!-- Suite -->
