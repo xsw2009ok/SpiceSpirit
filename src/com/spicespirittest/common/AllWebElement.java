@@ -170,6 +170,8 @@ public class AllWebElement {
 	public static By ORDER_INFO_SOURCE_CHANNEL = By.id("order_source");
 	/** 预定单 */
 	public static By ORDER_INFO_RESERVE_DATE = By.name("order_reserve_date");
+	
+	public static By ORDER_INFO_SET_TIME = By.id("order_delivery_date");
 	/** 送餐时间  开始时间*/
 	public static By ORDER_INFO_START_TIME = By.id("order_delivery_start_time");
 	/** 送餐时间  结束时间*/
