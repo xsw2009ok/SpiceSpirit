@@ -7,10 +7,10 @@ import com.spicespirittest.common.Config;
 import com.spicespirittest.common.JDBCUtil;
 import com.spicespirittest.common.SpiceSpiritBase;
 
-
-public class CenterInStock extends SpiceSpiritBase{
+public class CenterInStock extends SpiceSpiritBase {
 
 	Login login = new Login();
+
 	/**
 	 * 初始化页面
 	 */
@@ -27,10 +27,11 @@ public class CenterInStock extends SpiceSpiritBase{
 		result = "";
 		centerStockInit();
 		click(AllWebElement.MAINPAGE_CENTERSTOCK_INSTOCK);
+
 		for (int i = 1; i < 100; i++) {
 			try {
-				sleep();
 				click(AllWebElement.CENTERSTOCK_INSTOCK_CONFIRMED);
+				sleep();
 				click(AllWebElement.CENTERSTOCK_INSTOCK_INSTOCK);
 				for (int k = 1; k < 100; k++) {
 					try {
@@ -39,13 +40,14 @@ public class CenterInStock extends SpiceSpiritBase{
 						click(AllWebElement.CENTERSTOCK_INSTOCK_DEFAULTTIME);
 						click(AllWebElement.CENTERSTOCK_INSTOCK_CONFIRM);
 					} catch (Exception e) {
-						log.info("没有需要填写的批次了.");					
-						click(AllWebElement.CENTERSTOCK_INSTOCK_BUTTONCONFIRM);
-						click(AllWebElement.CENTERSTOCK_INSTOCK_CLOSEMESSAGE);
+						log.info("没有需要填写的批次了.");
+						break;
 					}
 				}
+				click(AllWebElement.CENTERSTOCK_INSTOCK_BUTTONCONFIRM);
 				sleep();
 				result = getText(AllWebElement.GET_MESSAGE_TEXT);
+				click(AllWebElement.CENTERSTOCK_INSTOCK_CLOSEMESSAGE);
 			} catch (Exception e) {
 				e.printStackTrace();
 				break;

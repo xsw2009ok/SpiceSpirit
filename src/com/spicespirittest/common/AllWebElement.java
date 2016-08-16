@@ -249,7 +249,7 @@ public class AllWebElement {
 	
 	
 	/** 供应链-入库-进入入库页面*/
-	public static By CENTERSTOCK_INSTOCK_INSTOCK = By.xpath("//tbody/tr[1]/td/a");
+	public static By CENTERSTOCK_INSTOCK_INSTOCK = By.xpath("//tbody[@id='purchase_list']/tr[1]/td/a");
 	/** 供应链-入库-写入批次号 */
 	public static By CENTERSTOCK_INSTOCK_BATCH = By.xpath("//tbody/tr[1]/td[4]/input");
 	/** 供应链-入库-当前时间 */

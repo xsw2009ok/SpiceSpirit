@@ -33,11 +33,12 @@ public class CenterOuStock extends SpiceSpiritBase {
 						click(AllWebElement.CENTERSTOCK_OUSTOCK_BUTTONCONFIRM);
 					} catch (Exception e) {
 						log.info("没有要处理的出库批次了");
-						click(AllWebElement.CENTERSTOCK_OUSTOCK_BUTTONOUT);
-						result = getText(By.id("close-back"));
-						click(AllWebElement.CENTERSTOCK_OUSTOCK_IMGCONFIRM);
+						break;
 					}
 				}
+				click(AllWebElement.CENTERSTOCK_OUSTOCK_BUTTONOUT);
+				result = getText(By.id("close-back"));
+				click(AllWebElement.CENTERSTOCK_OUSTOCK_IMGCONFIRM);
 			} catch (Exception e) {
 				e.printStackTrace();
 				break;

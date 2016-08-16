@@ -19,7 +19,7 @@ public class CenterStock extends SpiceSpiritBase {
 	 * 初始化页面
 	 */
 	public void centerStockInit() {
-		JDBCUtil.getDataBase("select DISTINCT(standard_code) from station_goods where standard_num = 1 and belong in(2,3)");
+		JDBCUtil.getDataBase("select DISTINCT(standard_code) from station_goods where standard_num = 1 and belong in(2,3) and goods_code not in ('MMTCA','MMTCB')");
 		waitForElementToLoad(Config.waittime, AllWebElement.MAINPAGE_CENTERSTOCK);
 		click(AllWebElement.MAINPAGE_CENTERSTOCK);
 	}
