@@ -13,7 +13,6 @@ import com.spicespirittest.common.SpiceSpiritBase;
 
 public class LogisticsGoodsApplication extends SpiceSpiritBase {
 
-	Logger log = Logger.getLogger(LogisticsGoodsApplication.class.getName());
 	public static String logisticsApplicationResult; 
 	Login login = new Login();
 	

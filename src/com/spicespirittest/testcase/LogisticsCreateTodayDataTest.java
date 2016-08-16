@@ -12,6 +12,5 @@ public class LogisticsCreateTodayDataTest {
 		LogisticsCreateTodayData lctdt = new LogisticsCreateTodayData();
 		lctdt.createTodayData();
 		Assert.assertEquals("今日数据生成完毕", lctdt.result);
-System.out.println(lctdt.result);
 	}
 }

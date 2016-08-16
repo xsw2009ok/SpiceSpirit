@@ -1,21 +1,11 @@
 package com.spicespirittest.page;
 
-import java.util.logging.Logger;
-
-import javax.security.auth.login.CredentialException;
-
-import org.openqa.selenium.By;
-import org.testng.annotations.Test;
-
 import com.spicespirittest.common.AllWebElement;
 import com.spicespirittest.common.Config;
-import com.spicespirittest.common.JDBCUtil;
+
 import com.spicespirittest.common.SpiceSpiritBase;
 
-
 public class Order extends SpiceSpiritBase {
-
-	Logger log = Logger.getLogger(Order.class.getName());
 
 	Login login = new Login();
 

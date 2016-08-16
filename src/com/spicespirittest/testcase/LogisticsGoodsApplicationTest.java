@@ -9,8 +9,6 @@ import com.spicespirittest.page.LogisticsGoodsApplication;
 
 public class LogisticsGoodsApplicationTest {
 
-	Logger log = Logger.getLogger(LogisticsGoodsApplicationTest.class.getName());
-
 	@Test
 	public void logisticsGoodsApplicationTest() {
 		LogisticsGoodsApplication logis = new LogisticsGoodsApplication();

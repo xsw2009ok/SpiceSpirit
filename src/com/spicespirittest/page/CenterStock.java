@@ -1,7 +1,5 @@
 package com.spicespirittest.page;
 
-import java.util.logging.Logger;
-
 import org.openqa.selenium.By;
 
 import com.spicespirittest.common.AllWebElement;
@@ -11,15 +9,14 @@ import com.spicespirittest.common.SpiceSpiritBase;
 
 public class CenterStock extends SpiceSpiritBase {
 
-	Logger log = Logger.getLogger(CenterStock.class.getName());
-
 	Login login = new Login();
 
 	/**
 	 * 初始化页面
 	 */
 	public void centerStockInit() {
-		JDBCUtil.getDataBase("select DISTINCT(standard_code) from station_goods where standard_num = 1 and belong in(2,3) and goods_code not in ('MMTCA','MMTCB')");
+		JDBCUtil.getDataBase(
+				"select DISTINCT(standard_code) from station_goods where standard_num = 1 and belong in(2,3) and goods_code not in ('MMTCA','MMTCB')");
 		waitForElementToLoad(Config.waittime, AllWebElement.MAINPAGE_CENTERSTOCK);
 		click(AllWebElement.MAINPAGE_CENTERSTOCK);
 	}

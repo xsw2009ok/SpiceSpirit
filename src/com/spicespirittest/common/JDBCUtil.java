@@ -12,8 +12,6 @@ import com.mysql.jdbc.Statement;
 
 public class JDBCUtil {
 
-	public static Logger log = Logger.getLogger(JDBCUtil.class.getName());
-
 	// 创建静态全局变量
 	public static Connection conn;
 	public static Statement statement;

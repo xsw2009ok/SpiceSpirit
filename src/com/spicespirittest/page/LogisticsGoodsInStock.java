@@ -1,16 +1,12 @@
 package com.spicespirittest.page;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 
 import com.spicespirittest.common.AllWebElement;
 import com.spicespirittest.common.Config;
 import com.spicespirittest.common.SpiceSpiritBase;
-import com.thoughtworks.selenium.webdriven.commands.IsVisible;
 
 public class LogisticsGoodsInStock extends SpiceSpiritBase {
-
-	Logger log = Logger.getLogger(LogisticsGoodsInStock.class.getName());
 
 	public static String result = "";
 
@@ -35,20 +31,20 @@ public class LogisticsGoodsInStock extends SpiceSpiritBase {
 		sleep();
 		logisticsInit();
 		for (int k = 1; k < 100; k++) {
-			try{
-			selectByValue(AllWebElement.LOGISTICS_INGAPPLICAION_SELECTOR, "5");
-			for (int i = 1; i < 100; i++) {
-				try {
-					sleep();
-					click(AllWebElement.LOGISTICS_INGAPPLICATION_PAGE);
-					input(By.xpath("//tbody/tr[" + i + "]/td[8]/input"), config.gapplicationnumber);
-				} catch (Exception e) {
-					e.printStackTrace();
-					break;
+			try {
+				selectByValue(AllWebElement.LOGISTICS_INGAPPLICAION_SELECTOR, "5");
+				for (int i = 1; i < 100; i++) {
+					try {
+						sleep();
+						click(AllWebElement.LOGISTICS_INGAPPLICATION_PAGE);
+						input(By.xpath("//tbody/tr[" + i + "]/td[8]/input"), config.gapplicationnumber);
+					} catch (Exception e) {
+						e.printStackTrace();
+						break;
+					}
 				}
-			}
-			click(AllWebElement.LOGISTICS_INGAPPLICATION_SAVE);
-			}catch(Exception e){
+				click(AllWebElement.LOGISTICS_INGAPPLICATION_SAVE);
+			} catch (Exception e) {
 				e.printStackTrace();
 				break;
 			}
