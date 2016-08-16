@@ -61,7 +61,7 @@
 			<class name ="com.spicespirittest.testcase.LogisticsGoodsInStockTest"/>
 		</classes>
  	</test>
- 	<!-- 客服正产下单 -->
+ 	<!-- 客服正常下单 -->
  	<test name="Order">
 		<classes>
 			<class name ="com.spicespirittest.testcase.OrderTest"/>
