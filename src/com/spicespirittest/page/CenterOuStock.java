@@ -38,6 +38,7 @@ public class CenterOuStock extends SpiceSpiritBase {
 				}
 				click(AllWebElement.CENTERSTOCK_OUSTOCK_BUTTONOUT);
 				result = getText(By.id("close-back"));
+				sleep();
 				click(AllWebElement.CENTERSTOCK_OUSTOCK_IMGCONFIRM);
 			} catch (Exception e) {
 				e.printStackTrace();
