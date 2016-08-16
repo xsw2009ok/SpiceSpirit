@@ -19,7 +19,7 @@ public class CenterStock extends SpiceSpiritBase {
 	 * 初始化页面
 	 */
 	public void centerStockInit() {
-		JDBCUtil.getDataBase("select goods_code from centre_stock where station_id = 58 ;");
+		JDBCUtil.getDataBase("select goods_code from station_goods where standard_num = 1 and belong in(2,3)");
 		waitForElementToLoad(Config.waittime, AllWebElement.MAINPAGE_CENTERSTOCK);
 		click(AllWebElement.MAINPAGE_CENTERSTOCK);
 	}

@@ -1,7 +1,6 @@
 package com.spicespirittest.testcase;
 
-import org.apache.log4j.lf5.viewer.categoryexplorer.CategoryExplorerLogRecordFilter;
-import org.testng.Assert;
+
 import org.testng.annotations.Test;
 
 import com.spicespirittest.page.CenterLogisticsGAppList;
