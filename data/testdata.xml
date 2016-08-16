@@ -24,7 +24,7 @@
 		<!-- 默认的控件等待时间 -->
 		<waittime>2</waittime>
 		<!-- 申购的数量 -->
-		<gapplicationnumber>5000</gapplicationnumber>
+		<gapplicationnumber>50</gapplicationnumber>
 		<!-- 下单会员手机号 -->
 		<order_phone>15801115436</order_phone>
 		<!-- all为执行所有的下单类型，  order为正常下单，reseve为预订单 -->
