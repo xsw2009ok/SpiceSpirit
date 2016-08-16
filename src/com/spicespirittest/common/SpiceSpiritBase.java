@@ -29,6 +29,7 @@ public class SpiceSpiritBase {
 	public static List<String> goodsCode = new ArrayList<String>();
 	
 	public String result ="";
+	
 	/**
 	 * 启动浏览器
 	 */

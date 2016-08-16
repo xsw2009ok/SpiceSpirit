@@ -43,7 +43,7 @@ public class AllWebElement {
 	/** 物流管理系统-订单派送*/
 	public static By MAINPAGE_LOGISTICS_ORDER = By.xpath("//li/ul/li[1]/a[contains(text(),'订单派送')]");
 	/** 物流管理系统-商品申购*/
-	public static By MAINPAGE_LOGISTICS_GOODSAPPLICATION = By.xpath("//li/ul/li[2]/a[contains(text(),'商品申购')]");
+	public static By MAINPAGE_LOGISTICS_GOODSAPPLICATION = By.xpath("//ul/li[3]/a[@class='li-aa3']");
 	/** 物流管理系统-商品调拨*/
 	public static By MAINPAGE_LOGISTICS_DB = By.xpath("//li/ul/li[3]/a[contains(text(),'商品调拨')]");
 	/** 物流管理系统-库存盘点*/
